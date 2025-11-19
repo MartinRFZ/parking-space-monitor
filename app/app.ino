@@ -74,7 +74,7 @@ void loop() {
     previousTime = currentTime;
     Serial.println("Nuevo Cliente.");
     String currentLine = "";   
-    header = "";  // Asegúrate de reiniciar el header antes de usarlo            
+    header = "";         
     while (client.connected() && currentTime - previousTime <= timeoutTime) {  
       currentTime = millis();
       if (client.available()) {             
